@@ -1,0 +1,346 @@
+            body {
+                font-family: 'Roboto', sans-serif;
+                box-sizing: border-box;
+                background-color: #e5e5e5;
+            }
+            /*------header------*/
+            
+            .slogan {
+                position: fixed;
+                width: 414px;
+                height: 82px;
+                background-color: #CF2B2B;
+                top: 0;
+                padding-top: 14px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+            
+            .box-nome {
+                width: 248px;
+                height: 44px;
+                margin-left: 21px;
+            }
+            
+            .nome {
+                font-family: 'Righteous', cursive;
+                font-weight: 400;
+                font-size: 44px;
+                color: #ffffff;
+            }
+            
+            .box-frase {
+                width: 226px;
+                height: 17px;
+                margin-left: 21px;
+            }
+            
+            .frase {
+                font-weight: 400;
+                font-size: 18px;
+                color: #ffffff;
+            }
+            /*------section------*/
+            
+            .selecao-prato {
+                box-sizing: border-box;
+                width: 414px;
+                height: 55px;
+                padding: 23px 19px;
+                margin-top: 92px;
+                background-color: #eeeeee;
+            }
+            
+            .nome-selecao {
+                font-family: 'Righteous', cursive;
+                font-weight: 400;
+                font-size: 26px;
+                color: #333333;
+            }
+            
+            .menu {
+                box-sizing: border-box;
+                width: 414px;
+                height: 370px;
+                margin: 0 auto;
+                padding-top: 10px;
+                background-color: #eeeeee;
+                overflow-x: scroll;
+            }
+            
+            .opcoes {
+                width: 943px;
+                height: 335px;
+                margin-left: 19px;
+                background-color: #eeeeee;
+                display: flex;
+                justify-content: space-between;
+                padding-right: 19px;
+            }
+            
+            .opcao {
+                box-sizing: border-box;
+                width: 172px;
+                height: 335px;
+                border-radius: 9px;
+                background-color: #ffffff;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+            }
+            
+            .borda {
+                border: 5px solid #32B72F;
+            }
+            
+            .marcador {
+                color: #32B72F;
+                width: 18px;
+                height: 18px;
+            }
+            
+            .sumir {
+                display: none;
+            }
+            
+            .rodape {
+                width: 135px;
+                margin: 5px 14px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #ffffff;
+            }
+            
+            .opcao img {
+                width: 144px;
+                height: 87px;
+                margin: 18px 14px 8px;
+                border-radius: 4px;
+            }
+            
+            .opcao p {
+                display: block;
+                background-color: #ffffff;
+            }
+            
+            .selecao {
+                box-sizing: border-box;
+                width: 414px;
+                height: 55px;
+                padding: 23px 19px;
+                background-color: #eeeeee;
+            }
+            
+            .opcao .imgbebida {
+                width: 144px;
+                height: 160px;
+                margin: 18px 14px 8px;
+                border-radius: 4px;
+            }
+            
+            .produto {
+                font-weight: 700;
+                font-size: 16px;
+                color: #333333;
+                margin: 0px 14px 10px;
+            }
+            
+            .descricao {
+                font-weight: 300;
+                font-size: 15px;
+                color: #a6a6a6;
+                margin: 0px 14px 12px;
+            }
+            
+            .preco {
+                font-weight: 400;
+                font-size: 16px;
+                color: #000000;
+            }
+            
+            .bottom-bar-1 {
+                position: fixed;
+                box-sizing: border-box;
+                width: 414px;
+                height: 92px;
+                bottom: 0;
+                padding: 15px 25px;
+                background-color: #ffffff;
+            }
+            
+            .bottom-bar-2 {
+                position: fixed;
+                box-sizing: border-box;
+                width: 414px;
+                height: 92px;
+                bottom: 0;
+                padding: 15px 25px;
+                background-color: #ffffff;
+            }
+            
+            button {
+                padding: 0px;
+                border: none;
+                background: none;
+                margin: none;
+                cursor: pointer;
+            }
+            
+            .fechamento-1 {
+                box-sizing: border-box;
+                width: 364px;
+                height: 61px;
+                border-radius: 50px;
+                padding: 8px 90px;
+                background-color: #cbcbcb;
+            }
+            
+            .fechamento-2 {
+                box-sizing: border-box;
+                width: 364px;
+                height: 61px;
+                border-radius: 50px;
+                padding: 20px 120px;
+                background-color: #32B72F;
+            }
+            
+            .fechar-pedido-1 {
+                box-sizing: border-box;
+                width: 220px;
+                height: 53px;
+                font-weight: 400;
+                font-size: 20px;
+                color: #ffffff;
+            }
+            
+            .fechar-pedido-2 {
+                box-sizing: border-box;
+                width: 130px;
+                height: 20px;
+                font-weight: 400;
+                font-size: 20px;
+                color: #ffffff;
+            }
+            
+            .separador-horizontal {
+                width: 414px;
+                height: 92px;
+                margin: 0 auto;
+                background-color: #eeeeee;
+            }
+            
+            .confirmar-conteiner {
+                width: 414px;
+                height: 100vh;
+                background: rgba(255, 255, 255, 0.9);
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                z-index: 10;
+                display: none;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .confirmar-conteiner.mostrar {
+                display: flex;
+            }
+            
+            .confirmar-box {
+                width: 377px;
+                height: 353px;
+                border-radius: 9px;
+                background-color: #50D074;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+            }
+            
+            .confirmar-topo {
+                width: 377px;
+                height: 27px;
+                margin-top: 21px;
+                margin-bottom: 28px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .confirmar-titulo {
+                font-weight: 700;
+                font-size: 22px;
+                color: #ffffff;
+            }
+            
+            .confirmar-precoPrato {
+                width: 325px;
+                height: 27px;
+                margin-left: 26px;
+                margin-bottom: 13px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .confirmar-precoBebida {
+                width: 325px;
+                height: 27px;
+                margin-left: 26px;
+                margin-bottom: 13px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .confirmar-precoSobremesa {
+                width: 325px;
+                height: 27px;
+                margin-left: 26px;
+                margin-bottom: 13px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .confirmar-precoTotal {
+                width: 325px;
+                height: 27px;
+                margin-left: 26px;
+                margin-bottom: 24px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .confirmar-box p {
+                font-weight: 400;
+                font-size: 22px;
+                color: #ffffff;
+            }
+            
+            .confirmar-pedido {
+                width: 329px;
+                height: 52px;
+                margin-left: 24px;
+                border-radius: 100px;
+                background-color: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .confirmar-pedido p {
+                font-weight: 700;
+                font-size: 22px;
+                color: #50D074;
+            }
+            
+            .cancelar-pedido {
+                width: 329px;
+                height: 52px;
+                margin-left: 24px;
+                border-radius: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .cancelar-pedido p {
+                font-size: 20px;
+            }
