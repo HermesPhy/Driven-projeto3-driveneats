@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>projeto3-driveneats</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>DrivenEats</h1>
+        <h4>Sua comida em 6 minutos</h4>
+    </header>
+
+    <main>
+        <section class="prato">
+            <h1>Primeiro, seu prato</h1>
+            <div class="container-produtos">
+                <div class="produto" onclick="selecionarPrato(this, 'Salmão com cream cheese', 29.90)">
+                    <img src="imagens/salmão.JPG" alt="Salmão com cream cheese">
+                    <p><strong>Salmão com cream cheese</strong></p>
+                    <p><small>Salmão grelhado com cream cheese. Acompanhado de arroz e legumes refogados na manteiga</small></p>
+                    <p>R$ 29,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="produto" onclick="selecionarPrato(this, 'Frango grelhado', 21.90)">
+                    <img src="imagens/frango.JPG" alt="Frango grelhado">
+                    <p><strong>Frango grelhado</strong></p>
+                    <p><small>Filé de peito de frango grelhado. Acompanhado de arroz e legumes refogados na manteiga</small></p>
+                    <p>R$ 21,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="produto" onclick="selecionarPrato(this, 'Filé bovino em tiras', 27.90)">
+                    <img src="imagens/carne.JPG" alt="Filé bovino em tiras">
+                    <p><strong>Filé bovino em tiras</strong></p>
+                    <p><small>Carne em tiras com molho shoyu. Acompanhado de arroz e legumes refogados na manteiga</small></p>
+                    <p>R$ 27,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="produto" onclick="selecionarPrato(this, 'Frango empanado', 23.90)">
+                    <img src="imagens/frangoempanado.JPG" alt="Frango empanado">
+                    <p><strong>Frango empanado</strong></p>
+                    <p><small>Peito de Frango e massa leve. Acompanhado de arroz e legumes refogados na manteiga</small></p>
+                    <p>R$ 23,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="produto" onclick="selecionarPrato(this, 'Yakisoba tradicional', 19.90)">
+                    <img src="imagens/yakisoba.JPG" alt="Yakisoba">
+                    <p><strong>Yakisoba tradicional</strong></p>
+                    <p><small>Macarrão, carne bovina, frango, repolho, brócolis, cenoura, couve-flor e molho shoyu.</small></p>
+                    <p>R$ 19,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </section>
+
+        <section class="bebida">
+            <h1>Agora, sua bebida</h1>
+            <div class="container-produtos">
+                <div class="produto" onclick="selecionarBebida(this, 'Coca-Cola', 4.90)">
+                    <img src="imagens/cocacola.JPG" alt="Coca-Cola">
+                    <p><strong>Coca-Cola</strong></p>
+                    <p><small>Lata 350ml</small></p>
+                    <p>R$ 4,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="produto" onclick="selecionarBebida(this, 'Guaraná', 4.90)">
+                    <img src="imagens/guarana.JPG" alt="Guaraná">
+                    <p><strong>Guaraná</strong></p>
+                    <p><small>Lata 350ml</small></p>
+                    <p>R$ 4,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="produto" onclick="selecionarBebida(this, 'Suco de laranja', 7.90)">
+                    <img src="imagens/sucolaranja.JPG" alt="Suco de laranja">
+                    <p><strong>Suco de laranja</strong></p>
+                    <p><small>Garrafa 500ml</small></p>
+                    <p>R$ 7,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="produto" onclick="selecionarBebida(this, 'H2OH limão', 6.90)">
+                    <img src="imagens/h2oh.JPG" alt="h2oh">
+                    <p><strong>H2OH limão</strong></p>
+                    <p><small>Garrafa 500ml</small></p>
+                    <p>R$ 6,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="produto" onclick="selecionarBebida(this, 'Chá gelado', 5.90)">
+                    <img src="imagens/chamate.JPG" alt="Chá gelado">
+                    <p><strong>Chá gelado</strong></p>
+                    <p><small>Garrafa 300ml</small></p>
+                    <p>R$ 5,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobremesa">
+            <h1>Por fim, sua sobremesa</h1>
+            <div class="container-produtos">
+                <div class="produto" onclick="selecionarSobremesa(this, 'Frutas carameladas', 10.90)">
+                    <img src="imagens/frutascarameladas.JPG" alt="Frutas carameladas">
+                    <p><strong>Frutas carameladas</strong></p>
+                    <p><small>Banana ou abacaxi caramelados.</small></p>
+                    <p>R$ 10,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="produto" onclick="selecionarSobremesa(this, 'Banana caramelada com chocolate ao leite', 13.90)">
+                    <img src="imagens/frutascarameladaschocolate.JPG" alt="Frutas carameladas com chocolate">
+                    <p><strong>Banana caramelada com chocolate ao leite</strong></p>
+                    <p><small>Banana, chocolate ao leite, massa leve e caramelo.</small></p>
+                    <p>R$ 13,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="produto" onclick="selecionarSobremesa(this, 'Rolinho Romeu e Julieta', 11.90)">
+                    <img src="imagens/Romeuejulieta.JPG" alt="Rolinho Romeu e Julieta">
+                    <p><strong>Rolinho Romeu e Julieta</strong></p>
+                    <p><small>Rolinho de queijo com goiabada.</small></p>
+                    <p>R$ 11,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="produto" onclick="selecionarSobremesa(this, 'Rolinho frutas vermelhas', 12.90)">
+                    <img src="imagens/rolinhofrutasvermelhas.JPG" alt="Rolinho frutas vermelhas">
+                    <p><strong>Rolinho frutas vermelhas</strong></p>
+                    <p><small>Rolinho de queijo com morango + cereja + framboesa.</small></p>
+                    <p>R$ 12,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="produto" onclick="selecionarSobremesa(this, 'Dango', 9.90)">
+                    <img src="imagens/Dango.JPG" alt="Dango">
+                    <p><strong>Dango</strong></p>
+                    <p><small>Bolinhos de arroz doce e molho shoyu</small></p>
+                    <p>R$ 9,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <button onclick="fecharPedido()">Selecione os 3 itens para fechar o pedido</button>
+    </footer>
+
+
+    <!--
+    <footer>
+        <div class="bottom-bar-1">
+            <div class="fechamento-1">
+                <p class="fechar-pedido-1">Selecione os 3 itens para fechar o pedido</p>
+            </div>
+        </div>
+        <div class="bottom-bar-2 sumir">
+            <button>
+            <div class="fechamento-2">
+                <p class="fechar-pedido-2">Fechar pedido</p>
+            </div>
+            </button>
+        </div>
+    </footer>
+
+    <div class="confirmar-conteiner">
+        <div class="confirmar-box">
+            <div class="confirmar-topo">
+                <p class="confirmar-titulo">Confirme seu pedido</p>
+            </div>
+            <div class="confirmar-precoPrato">
+                <p class="pratoEscolhido">Indefinido</p>
+                <p class="precoPrato">R$ 0,00</p>
+            </div>
+            <div class="confirmar-precoBebida">
+                <p class="bebidaEscolhida">Indefinido</p>
+                <p class="precoBebida">R$ 0,00</p>
+            </div>
+            <div class="confirmar-precoSobremesa">
+                <p class="sobremesaEscolhida">Indefinido</p>
+                <p class="precoSobremesa">R$ 0,00</p>
+            </div>
+            <div class="confirmar-precoTotal">
+                <p class="total">TOTAL</p>
+                <p class="precoTotal">R$ 0,00</p>
+            </div>
+
+            <button onclick="confirmado">
+            <div class="confirmar-pedido">
+                <p class="tudoCerto">Tudo certo, pode pedir!</p>
+            </div>
+            </button>
+            <div class="separador-horizontal-2"></div>
+            <button onclick="cancelado">
+            <div class="cancelar-pedido">
+                <p class="cancelar">Cancelar</p>
+            </div>
+            </button>
+        </div>
+    </div>
+
+-->
+
+
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
